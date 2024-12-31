@@ -46,11 +46,6 @@ function instructorLogin() {
         alert("Please enter both email and password.");
         return;
     }
-
-    // **Here, you would typically make an AJAX request to your server**
-    // **to authenticate the instructor credentials**
-
-    // Example (placeholder):
     if (instructorEmail === "instructor@example.com" && instructorPassword === "instructor123") { 
         alert("Instructor Login Successful!");
         goToInstructorDashboard(); 
@@ -83,11 +78,6 @@ function instructorSignup() {
         alert("Please enter both email and password.");
         return;
     }
-
-    // **Here, you would typically make an AJAX request to your server**
-    // **to register the new instructor**
-
-    // Example (placeholder):
     alert("Instructor Signup Successful!");
     closeLoginPopup('instructorSignupForm'); 
 }
@@ -100,11 +90,6 @@ function learnerSignup() {
         alert("Please enter both email and password.");
         return;
     }
-
-    // **Here, you would typically make an AJAX request to your server**
-    // **to register the new learner**
-
-    // Example (placeholder):
     alert("Learner Signup Successful!");
     closeLoginPopup('learnerSignupForm'); 
 }
@@ -170,7 +155,7 @@ function takeTest() {
 }
 
 function goBackToDashboard() {
-    window.location.href = "index.html"; // Redirect to the index.html page on logout
+    window.location.href = "index.html";
 }
 
 function transitionToPage(url) {
